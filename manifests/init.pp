@@ -8,6 +8,9 @@ class apache (
   String $service_name,
   String $service_ensure,
   Boolean $service_enable,
+  String[1] $vhosts_owner,
+  String[1] $vhosts_group,
+  String[1] $vhosts_dir,
 ) {
   contain apache::install
   contain apache::config
