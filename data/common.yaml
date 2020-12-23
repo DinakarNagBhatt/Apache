@@ -3,3 +3,4 @@ apache::install_ensure: 'present'
 apache::config_ensure: 'file'
 apache::service_ensure: 'running'
 apache::service_enable: true
+apache::vhosts_dir: '/etc/apache2/sites-available'
